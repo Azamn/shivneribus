@@ -161,7 +161,7 @@
 <div class="jumbotron jumbotron-fluid jumbotronImg">
   <div class="container jumboContainer"> 
   	<div class="col-sm-08 offset-sm-1 text-center">
-  	<form action="busDetailsProcess.php" method="POST" class="form-inline form-manage">
+  	<form action="busDetailsProcess.php" method="POST" enctype="application/x-www-form-urlencoded"class="form-inline form-manage">
     <div class="search-widget">
     	<div class="search-input-wrap inputWithIcon3">
     	<input id="citySearchFrom" type="text" name="source"  placeholder="FROM">

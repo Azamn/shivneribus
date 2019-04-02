@@ -1,5 +1,6 @@
 <?php
   session_start();
+  include 'busDetailsProcess.php';
 ?>
 
 <!DOCTYPE html>
@@ -166,12 +167,19 @@
             <div class="col-md-12">
                 <div class="main-area-right ">
                         <!-- heloo -->
+                        
                     <div>
-                      Vehichel No = <?php echo $_SESSION['vehicalNo']; ?><br>
                       Source = <?php echo $_SESSION['source']; ?><br>
                       Destination = <?php echo $_SESSION['destination']; ?><br>
-                      Date = <?php echo $_SESSION['date']; ?><br>
-                      Total Seats = <?php echo $_SESSION['Total_Seats']; ?><br>
+                      Date = <?php echo $_SESSION['date']; ?><br> 
+                      Total Seats = <?php echo $_SESSION['totalSeats']; ?><br>
+                      StartTime = <?php echo $_SESSION['startTime'];?><br>
+                      EndTime = <?php echo $_SESSION['endTime'];?><br>
+                      Travelling Time = <?php echo $_SESSION['travellingTime'] ?><br>
+                      operatorName = <?php echo $_SESSION['operator_name']; ?><br>
+                      Description = <?php echo $_SESSION['description']; ?><br>
+                      price = <?php echo $_SESSION['price']; ?><br>
+                      rating = <?php echo $_SESSION['rating']; ?><br>
 
                     </div>
                     <a href="#" id="showDetails" class="btn btn-success">View Seats</a>

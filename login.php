@@ -15,6 +15,6 @@
 		$_SESSION['name'] = $abc['data']['name']; 
 		echo "save Success";
 		echo "<pre>"; print_r($abc); exit();
-		//header('Location:index.php');
+		//header('Location:index.php'); 
 	}
 ?>
