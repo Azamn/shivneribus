@@ -14,6 +14,7 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/	bootstrap/4.1.3/css/bootstrap.min.css">
 
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/privacy.css">
   <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
 
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/
@@ -164,22 +165,26 @@
   <div class="col-md-10" >
     <div class="container">
         <div class="row">
-            <div class="col-md-12">
-                <div class="main-area-right ">
-                        <!-- heloo -->
-                        
-                    <div>
-                      Source = <?php echo $_SESSION['source']; ?><br>
-                      Destination = <?php echo $_SESSION['destination']; ?><br>
-                      Date = <?php echo $_SESSION['date']; ?><br> 
-                      Total Seats = <?php echo $_SESSION['totalSeats']; ?><br>
-                      StartTime = <?php echo $_SESSION['startTime'];?><br>
-                      EndTime = <?php echo $_SESSION['endTime'];?><br>
-                      Travelling Time = <?php echo $_SESSION['travellingTime'] ?><br>
-                      operatorName = <?php echo $_SESSION['operator_name']; ?><br>
-                      Description = <?php echo $_SESSION['description']; ?><br>
-                      price = <?php echo $_SESSION['price']; ?><br>
-                      rating = <?php echo $_SESSION['rating']; ?><br>
+          <?php 
+                $seconds = $_SESSION['travellingTime'];
+                $hour = floor($seconds/3600);
+                $min = floor(($seconds/60)%60);
+                $sec = $seconds%60;
+          ?>
+
+                    operatorName = <?php echo $_SESSION['operator_name']; ?><br>
+                    StartTime = <?php echo $_SESSION['startTime'];?><br>
+                    Travelling Time = <?php echo "$hour:$min"; ?><br>
+                    EndTime = <?php echo $_SESSION['endTime'];?><br>
+                    rating = <?php echo $_SESSION['rating']; ?><br>
+
+                    Description = <?php echo $_SESSION['description']; ?><br>
+                    Source = <?php echo $_SESSION['source']; ?><br>
+                    Destination = <?php echo $_SESSION['destination']; ?><br>
+                    Date = <?php echo $_SESSION['date']; ?><br> 
+                    Total Seats = <?php echo $_SESSION['totalSeats']; ?><br>
+              
+                    price = <?php echo $_SESSION['price']; ?><br>
 
                     </div>
                     <a href="#" id="showDetails" class="btn btn-success">View Seats</a>
@@ -206,7 +211,7 @@
                       </div>
 
                    </div>
-          
+            <!--  -->
      </div>
    </div>
               
@@ -246,6 +251,7 @@
     })
   })
 </script>
+
 <!-- 
 End date picker view -->
 

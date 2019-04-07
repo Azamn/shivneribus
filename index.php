@@ -164,20 +164,20 @@
   	<form action="busDetailsProcess.php" method="POST" enctype="application/x-www-form-urlencoded"class="form-inline form-manage">
     <div class="search-widget">
     	<div class="search-input-wrap inputWithIcon3">
-    	<input id="citySearchFrom" type="text" name="source"  placeholder="FROM">
+    	<input id="citySearchFrom" type="text" name="source" required="required" placeholder="FROM">
     	<div class="icon-input-wrap">
     		<i class="fa fa-building"></i>
     	</div>
     	</div>
     </div>
     <div class="search-input-wrap inputWithIcon4">
-    	<input id="citySearchDesti" type="text" name="destination"  placeholder="TO">
+    	<input id="citySearchDesti" type="text" name="destination" required="required" placeholder="TO">
     	<div class="icon-input icon-city">
     		<i class="fa fa-building"></i>
     	</div>
     </div>
     <div class="dates search-input-wrap inputWithIcon2">
-    	<input id="datepicker" class="search-input" type="text" name="date" autocomplete="off" placeholder="ONWARD DATE">
+    	<input id="datepicker" class="search-input" type="text" name="date" required="required" autocomplete="off" placeholder="ONWARD DATE">
     	<div class="icon-input icon-calendar">
     		<i class="fa fa-calendar"></i>
     	</div>
