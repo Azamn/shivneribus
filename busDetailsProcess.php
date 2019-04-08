@@ -26,13 +26,13 @@
 	foreach ($obj as $value) {
 		//print_r($obj);
 		//echo $value->id;\
-		$id=$value->id;
-		$seatName = $value->seatName;
-		$seatPrice = $value->seatPrice;
-		$position = $value->pos;
+		echo $id=$value->id;
+		echo $seatName = $value->seatName;
+		echo $seatPrice = $value->seatPrice;
+		echo $position = $value->pos;
 		//echo $obj;
 	}
-
+	//die();
 	// echo $seatPrice;
 	//print_r($obj);
 	

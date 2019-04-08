@@ -189,7 +189,7 @@
                     </div>
                     <a href="#" id="showDetails" class="btn btn-success">View Seats</a>
 
-                </div>
+                <!-- </div> -->
               </div>
 
             <div class="col-md-12">
@@ -216,8 +216,6 @@
    </div>
               
 </div> 
-
-
 
 
 

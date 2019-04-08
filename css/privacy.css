@@ -2895,7 +2895,7 @@ h3 {
  font-size:24.5px
 }
 #mBWrapper {
- width:980px
+ /* width:100vw */
 }
 .pd-left {
  padding-left:9%
